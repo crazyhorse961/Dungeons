@@ -1,0 +1,17 @@
+lives: 3
+
+dungeonspawn: x y z world-differentfrom-lobby
+
+lobbyspawn: x y z world
+
+no-lives-death: '&c%player% died! He doesn''t have more lifes'
+
+lost-one-life: '&c%player lost 1 life!'
+
+commands:
+  start:
+    - 'potato '
+    - 'no slash needed!'
+  end:
+    - 'give Notch dirt 64'
+

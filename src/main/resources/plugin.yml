@@ -1,0 +1,8 @@
+main: com.crazyhoorse961.dungeons.Dungeon
+name: Dungeon
+version: CUSTOM
+
+commands:
+  dungeon:
+    usage: /dungeon <start/end>
+    alias: dg
