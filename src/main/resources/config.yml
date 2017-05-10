@@ -10,8 +10,8 @@ lost-one-life: '&c%player lost 1 life!'
 
 commands:
   start:
-    - 'potato '
+    - 'broadcast '
     - 'no slash needed!'
   end:
-    - 'give Notch dirt 64'
+    - 'give %player% dirt 64'
 
