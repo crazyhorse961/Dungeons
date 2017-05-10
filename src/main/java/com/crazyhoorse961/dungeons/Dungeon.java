@@ -26,6 +26,7 @@ public class Dungeon extends JavaPlugin
 
 
     public void onEnable(){
+        instance = this;
         saveDefaultConfig();
         getServer().getPluginManager().registerEvents(new DeathListener(), this);
         getServer().getPluginManager().registerEvents(new QuitListener(), this);
