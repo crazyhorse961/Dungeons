@@ -4,6 +4,7 @@ package com.crazyhoorse961.dungeons;/**
 
 import com.crazyhoorse961.dungeons.commands.DungeonCommand;
 import com.crazyhoorse961.dungeons.listeners.DeathListener;
+import com.crazyhoorse961.dungeons.listeners.QuitListener;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.ArrayList;
@@ -27,6 +28,7 @@ public class Dungeon extends JavaPlugin
     public void onEnable(){
         saveDefaultConfig();
         getServer().getPluginManager().registerEvents(new DeathListener(), this);
+        getServer().getPluginManager().registerEvents(new QuitListener(), this);
         getCommand("dungeon").setExecutor(new DungeonCommand());
     }
 
