@@ -41,6 +41,9 @@ public class DungeonCommand implements CommandExecutor
                                 Dungeon.getInstance().getPlayersDeath().remove(pls.getName());
                             }
                         });
+                        String[] values = Dungeon.getInstance().getConfig().getString("lobbyspawn").split(" ");
+                        Location toTp = new Location(Bukkit.getWorld(values[3]), Double.valueOf(values[0]), Double.valueOf(values[1]), Double.valueOf(values[2]));
+                        Bukkit.getOnlinePlayers().forEach(pls -> pls.teleport(toTp));
                         return true;
                     case "start":
                         if(!commandSender.hasPermission("dg.admin.start")){
@@ -49,9 +52,14 @@ public class DungeonCommand implements CommandExecutor
                         }
                         Bukkit.getOnlinePlayers().forEach(pls -> Dungeon.getInstance().getPlayersInDungeon().add(pls.getName()));
                         Bukkit.getOnlinePlayers().forEach(pls -> Dungeon.getInstance().getPlayersDeath().put(pls.getName(), 0 ));
-                        String[] values = Dungeon.getInstance().getConfig().getString("dungeonspawn").split(" ");
-                        Location toTp = new Location(Bukkit.getWorld(values[3]), Double.valueOf(values[0]), Double.valueOf(values[1]), Double.valueOf(values[2]));
-                        Bukkit.getOnlinePlayers().forEach(pls -> pls.teleport(toTp));
+                        String[] valuesD = Dungeon.getInstance().getConfig().getString("dungeonspawn").split(" ");
+                        Location toTpD = new Location(Bukkit.getWorld(valuesD[3]), Double.valueOf(valuesD[0]), Double.valueOf(valuesD[1]), Double.valueOf(valuesD[2]));
+                        Bukkit.getOnlinePlayers().forEach(pls -> pls.teleport(toTpD));
+                        for(String str : Dungeon.getInstance().getPlayersInDungeon()){
+                            for(String commands : Dungeon.getInstance().getConfig().getStringList("commands.end")){
+                                Bukkit.dispatchCommand(Bukkit.getConsoleSender(), commands.replace("%player%", str));
+                            }
+                        }
                         return true;
                     case "leave":
                         if(!commandSender.hasPermission("dg.player.leave") || (!(commandSender instanceof Player))){

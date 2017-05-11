@@ -29,7 +29,6 @@ public class DeathListener implements Listener
                 p.teleport(new Location(Bukkit.getWorld(values[3]), Double.valueOf(values[0]), Double.valueOf(values[1]), Double.valueOf(values[2])));
                 return;
             }
-            Dungeon.getInstance().getPlayersDeath().remove(p.getName());
             Dungeon.getInstance().getPlayersDeath().put(p.getName(), Dungeon.getInstance().getPlayersDeath().get(p.getName()) + 1);
             return;
         }
