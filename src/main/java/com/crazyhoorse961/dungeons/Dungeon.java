@@ -5,12 +5,10 @@ package com.crazyhoorse961.dungeons;/**
 import com.crazyhoorse961.dungeons.commands.DungeonCommand;
 import com.crazyhoorse961.dungeons.listeners.DeathListener;
 import com.crazyhoorse961.dungeons.listeners.QuitListener;
+import org.bukkit.command.PluginCommand;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @author crazyhoorse961
@@ -30,7 +28,9 @@ public class Dungeon extends JavaPlugin
         saveDefaultConfig();
         getServer().getPluginManager().registerEvents(new DeathListener(), this);
         getServer().getPluginManager().registerEvents(new QuitListener(), this);
-        getCommand("dungeon").setExecutor(new DungeonCommand());
+        PluginCommand cmd = getCommand("dungeon");
+        cmd.setAliases(Arrays.asList("dg"));
+        cmd.setExecutor(new DungeonCommand());
     }
 
     public void onDisable(){

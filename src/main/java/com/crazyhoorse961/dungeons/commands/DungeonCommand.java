@@ -56,7 +56,7 @@ public class DungeonCommand implements CommandExecutor
                         Location toTpD = new Location(Bukkit.getWorld(valuesD[3]), Double.valueOf(valuesD[0]), Double.valueOf(valuesD[1]), Double.valueOf(valuesD[2]));
                         Bukkit.getOnlinePlayers().forEach(pls -> pls.teleport(toTpD));
                         for(String str : Dungeon.getInstance().getPlayersInDungeon()){
-                            for(String commands : Dungeon.getInstance().getConfig().getStringList("commands.end")){
+                            for(String commands : Dungeon.getInstance().getConfig().getStringList("commands.start")){
                                 Bukkit.dispatchCommand(Bukkit.getConsoleSender(), commands.replace("%player%", str));
                             }
                         }

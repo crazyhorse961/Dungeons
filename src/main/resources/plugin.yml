@@ -4,5 +4,5 @@ version: CUSTOM
 
 commands:
   dungeon:
-    usage: /dungeon <start/end>
-    alias: dg
+    usage: /dungeon <start|end|leave>
+    description: Main Dungeon command.

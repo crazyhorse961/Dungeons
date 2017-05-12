@@ -21,7 +21,7 @@ public class DeathListener implements Listener
     public void onDeath(PlayerDeathEvent e){
         Player p = e.getEntity();
         if(Dungeon.getInstance().getPlayersInDungeon().contains(p.getName())){
-            if(Dungeon.getInstance().getPlayersDeath().get(p.getName()) >= Dungeon.getInstance().getConfig().getInt("lives")){
+            if(Dungeon.getInstance().getPlayersDeath().get(p.getName()) == Dungeon.getInstance().getConfig().getInt("lives")){
                 Dungeon.getInstance().getPlayersInDungeon().forEach(pls -> Bukkit.getPlayer(pls).sendMessage(ChatColor.translateAlternateColorCodes('&', Dungeon.getInstance().getConfig().getString("no-lives-death").replace("%player%", p.getName()))));
                 Dungeon.getInstance().getPlayersInDungeon().remove(p.getName());
                 Dungeon.getInstance().getPlayersDeath().remove(p.getName());
@@ -30,6 +30,10 @@ public class DeathListener implements Listener
                 return;
             }
             Dungeon.getInstance().getPlayersDeath().put(p.getName(), Dungeon.getInstance().getPlayersDeath().get(p.getName()) + 1);
+            Bukkit.getScheduler().runTaskLater(Dungeon.getInstance(), () ->{
+                String[] values = Dungeon.getInstance().getConfig().getString("dungeonspawn").split(" ");
+                p.teleport(new Location(Bukkit.getWorld(values[3]), Double.valueOf(values[0]), Double.valueOf(values[1]), Double.valueOf(values[2])));
+            }, 20);
             return;
         }
     }
