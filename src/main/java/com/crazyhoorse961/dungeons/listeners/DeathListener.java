@@ -33,7 +33,7 @@ public class DeathListener implements Listener
             Bukkit.getScheduler().runTaskLater(Dungeon.getInstance(), () ->{
                 String[] values = Dungeon.getInstance().getConfig().getString("dungeonspawn").split(" ");
                 p.teleport(new Location(Bukkit.getWorld(values[3]), Double.valueOf(values[0]), Double.valueOf(values[1]), Double.valueOf(values[2])));
-            }, 20);
+            }, 5);
             return;
         }
     }
