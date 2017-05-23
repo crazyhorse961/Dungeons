@@ -6,3 +6,4 @@ commands:
   dungeon:
     usage: /dungeon <start|end|leave>
     description: Main Dungeon command.
+    aliases: [dg]

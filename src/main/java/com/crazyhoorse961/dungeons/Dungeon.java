@@ -19,6 +19,7 @@ public class Dungeon extends JavaPlugin
 
     private List<String> playersInDungeon = new ArrayList<String>();
     private Map<String, Integer> playersDeath = new HashMap<String, Integer>();
+    private List<String> cachedPlayers = new ArrayList<>();
 
     private static Dungeon instance;
 
@@ -47,5 +48,9 @@ public class Dungeon extends JavaPlugin
 
     public Map<String, Integer> getPlayersDeath() {
         return playersDeath;
+    }
+
+    public List<String> getCachedPlayers() {
+        return cachedPlayers;
     }
 }

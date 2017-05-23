@@ -18,6 +18,7 @@ public class QuitListener implements Listener
         if(Dungeon.getInstance().getPlayersInDungeon().contains(ev.getPlayer().getName())){
             Dungeon.getInstance().getPlayersInDungeon().remove(ev.getPlayer().getName());
             Dungeon.getInstance().getPlayersDeath().remove(ev.getPlayer().getName());
+            Dungeon.getInstance().getCachedPlayers().remove(ev.getPlayer().getName());
         }
     }
 }

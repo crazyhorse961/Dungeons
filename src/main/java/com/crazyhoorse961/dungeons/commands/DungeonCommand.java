@@ -39,9 +39,10 @@ public class DungeonCommand implements CommandExecutor
                             if(Dungeon.getInstance().getPlayersInDungeon().contains(pls.getName())){
                                 Dungeon.getInstance().getPlayersInDungeon().remove(pls.getName());
                                 Dungeon.getInstance().getPlayersDeath().remove(pls.getName());
+                                Dungeon.getInstance().getCachedPlayers().remove(pls.getName());
                             }
                         });
-                        String[] values = Dungeon.getInstance().getConfig().getString("lobbyspawn").split(" ");
+                        String[] values = Dungeon.getInstance().getConfig().getString("lobbyspawn").split(";");
                         Location toTp = new Location(Bukkit.getWorld(values[3]), Double.valueOf(values[0]), Double.valueOf(values[1]), Double.valueOf(values[2]));
                         Bukkit.getOnlinePlayers().forEach(pls -> pls.teleport(toTp));
                         return true;
@@ -51,8 +52,9 @@ public class DungeonCommand implements CommandExecutor
                             return true;
                         }
                         Bukkit.getOnlinePlayers().forEach(pls -> Dungeon.getInstance().getPlayersInDungeon().add(pls.getName()));
+                        Bukkit.getOnlinePlayers().forEach(pls -> Dungeon.getInstance().getCachedPlayers().add(pls.getName()));
                         Bukkit.getOnlinePlayers().forEach(pls -> Dungeon.getInstance().getPlayersDeath().put(pls.getName(), 0 ));
-                        String[] valuesD = Dungeon.getInstance().getConfig().getString("dungeonspawn").split(" ");
+                        String[] valuesD = Dungeon.getInstance().getConfig().getString("dungeonspawn").split(";");
                         Location toTpD = new Location(Bukkit.getWorld(valuesD[3]), Double.valueOf(valuesD[0]), Double.valueOf(valuesD[1]), Double.valueOf(valuesD[2]));
                         Bukkit.getOnlinePlayers().forEach(pls -> pls.teleport(toTpD));
                         for(String str : Dungeon.getInstance().getPlayersInDungeon()){

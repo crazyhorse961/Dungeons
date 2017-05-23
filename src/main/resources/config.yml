@@ -1,8 +1,8 @@
 lives: 3
 
-dungeonspawn: x y z world-differentfrom-lobby
+dungeonspawn: x;y;z;world-differentfrom-lobby
 
-lobbyspawn: x y z world
+lobbyspawn: x;y;z;world
 
 no-lives-death: '&c%player% died! He doesn''t have more lifes'
 
