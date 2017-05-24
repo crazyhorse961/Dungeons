@@ -21,7 +21,7 @@ public class DungeonCommand implements CommandExecutor
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
         switch(strings.length){
             case 0:
-                commandSender.sendMessage(ChatColor.RED + "You might specify an argument (/dg <start|end|leave>");
+                commandSender.sendMessage(ChatColor.RED + "You might specify an argument (/dg <start|end|leave|reload>");
                 return true;
             case 1:
                 switch(strings[0]){
@@ -74,7 +74,7 @@ public class DungeonCommand implements CommandExecutor
                         }
                         Dungeon.getInstance().getPlayersInDungeon().remove(commandSender.getName());
                         Dungeon.getInstance().getPlayersDeath().remove(commandSender.getName());
-                        String[] lobby = Dungeon.getInstance().getConfig().getString("lobbyspawn").split(" ");
+                        String[] lobby = Dungeon.getInstance().getConfig().getString("lobbyspawn").split(";");
                         ((Player) commandSender).teleport(new Location(Bukkit.getWorld(lobby[3]), Double.valueOf(lobby[0]), Double.valueOf(lobby[1]), Double.valueOf(lobby[2])));
                         commandSender.sendMessage(ChatColor.GREEN + "You leaved the dungeon!");
                         return true;
