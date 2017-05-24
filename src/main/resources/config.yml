@@ -8,7 +8,7 @@ no-lives-death: '&c%player% died! He doesn''t have more lifes'
 
 lost-one-life: '&c%player lost 1 life! (%lifes%/%max%)'
 
-altready-started: 'Game altready started'
+already-started: 'Game altready started'
 
 not-started: 'You didn''t start the game'
 

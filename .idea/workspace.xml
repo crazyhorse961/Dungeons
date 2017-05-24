@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4b4a385c-f5e5-4a25-ab9d-d37fd17cd79f" name="Default" comment="Last addon">
+    <list default="true" id="4b4a385c-f5e5-4a25-ab9d-d37fd17cd79f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Dungeons/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Dungeons/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/Dungeon.java" afterPath="$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/Dungeon.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/commands/DungeonCommand.java" afterPath="$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/commands/DungeonCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/listeners/DeathListener.java" afterPath="$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/listeners/DeathListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/listeners/QuitListener.java" afterPath="$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/listeners/QuitListener.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Dungeons/src/main/resources/config.yml" afterPath="$PROJECT_DIR$/../Dungeons/src/main/resources/config.yml" />
     </list>
     <ignored path="$PROJECT_DIR$/../Dungeons/out/" />
@@ -43,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DungeonCommand.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DungeonCommand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/commands/DungeonCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="56" column="159" lean-forward="false" selection-start-line="56" selection-start-column="159" selection-end-line="56" selection-end-column="159" />
+            <state relative-caret-position="748">
+              <caret line="56" column="145" lean-forward="false" selection-start-line="56" selection-start-column="145" selection-end-line="56" selection-end-column="145" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -91,11 +88,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="config.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../Dungeons/src/main/resources/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="54" lean-forward="false" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
+            <state relative-caret-position="170">
+              <caret line="10" column="2" lean-forward="false" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -125,9 +122,9 @@
         <option value="$PROJECT_DIR$/../Dungeons/src/main/resources/plugin.yml" />
         <option value="$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/listeners/QuitListener.java" />
         <option value="$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/Dungeon.java" />
+        <option value="$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/listeners/DeathListener.java" />
         <option value="$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/commands/DungeonCommand.java" />
         <option value="$PROJECT_DIR$/../Dungeons/src/main/resources/config.yml" />
-        <option value="$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/listeners/DeathListener.java" />
       </list>
     </option>
   </component>
@@ -745,7 +742,7 @@
       <workItem from="1495633082711" duration="653000" />
       <workItem from="1495633932837" duration="1325000" />
       <workItem from="1495635595454" duration="2463000" />
-      <workItem from="1495638894827" duration="3953000" />
+      <workItem from="1495638894827" duration="4063000" />
     </task>
     <task id="LOCAL-00001" summary="Worked on main listener and main command, maven etc.">
       <created>1494353570656</created>
@@ -810,11 +807,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495640825736</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Last addon">
+      <created>1495642966794</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1495642966794</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23666000" />
+    <option name="totallyTimeSpent" value="23776000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1331,21 +1335,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Dungeons/src/main/resources/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="54" lean-forward="false" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/commands/DungeonCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="56" column="159" lean-forward="false" selection-start-line="56" selection-start-column="159" selection-end-line="56" selection-end-column="159" />
+        <state relative-caret-position="748">
+          <caret line="56" column="145" lean-forward="false" selection-start-line="56" selection-start-column="145" selection-end-line="56" selection-end-column="145" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Dungeons/src/main/resources/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="2" lean-forward="false" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>

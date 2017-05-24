@@ -54,7 +54,7 @@ public class DungeonCommand implements CommandExecutor
                             return true;
                         }
                         if(!Dungeon.getInstance().getPlayersInDungeon().isEmpty()){
-                            commandSender.sendMessage(ChatColor.translateAlternateColorCodes('&', Dungeon.getInstance().getConfig().getString("altready-started")));
+                            commandSender.sendMessage(ChatColor.translateAlternateColorCodes('&', Dungeon.getInstance().getConfig().getString("already-started")));
                             return true;
                         }
                         Bukkit.getOnlinePlayers().forEach(pls -> Dungeon.getInstance().getPlayersInDungeon().add(pls.getName()));
