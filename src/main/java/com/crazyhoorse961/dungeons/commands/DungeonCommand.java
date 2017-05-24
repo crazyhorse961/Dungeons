@@ -31,7 +31,7 @@ public class DungeonCommand implements CommandExecutor
                             return true;
                         }
                         if(Dungeon.getInstance().getPlayersInDungeon().isEmpty()){
-                            commandSender.sendMessage(ChatColor.RED + "Dungeon hasn't yet started!");
+                            commandSender.sendMessage(ChatColor.translateAlternateColorCodes('&', Dungeon.getInstance().getConfig().getString("not-started")));
                             return true;
                         }
                             for(String commands : Dungeon.getInstance().getConfig().getStringList("commands.end")){
@@ -54,7 +54,7 @@ public class DungeonCommand implements CommandExecutor
                             return true;
                         }
                         if(!Dungeon.getInstance().getPlayersInDungeon().isEmpty()){
-                            commandSender.sendMessage(ChatColor.RED + "Dungeon altready started!");
+                            commandSender.sendMessage(ChatColor.translateAlternateColorCodes('&', Dungeon.getInstance().getConfig().getString("altready-started")));
                             return true;
                         }
                         Bukkit.getOnlinePlayers().forEach(pls -> Dungeon.getInstance().getPlayersInDungeon().add(pls.getName()));

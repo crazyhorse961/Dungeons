@@ -32,6 +32,7 @@ public class Dungeon extends JavaPlugin
         PluginCommand cmd = getCommand("dungeon");
         cmd.setAliases(Arrays.asList("dg"));
         cmd.setExecutor(new DungeonCommand());
+        DeathListener.get().loadConfig();
     }
 
     public void onDisable(){

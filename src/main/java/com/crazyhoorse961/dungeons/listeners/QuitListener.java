@@ -3,6 +3,7 @@ package com.crazyhoorse961.dungeons.listeners;/**
  */
 
 import com.crazyhoorse961.dungeons.Dungeon;
+import org.bukkit.Bukkit;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
@@ -25,7 +26,7 @@ public class QuitListener implements Listener
     @EventHandler
     public void onJoin(PlayerJoinEvent ev){
         if(Dungeon.getInstance().getCachedPlayers().contains(ev.getPlayer().getName())){
-            ev.getPlayer().teleport(DeathListener.get().lobbyspawn);
+            Bukkit.getScheduler().runTaskLater(Dungeon.getInstance(), () -> ev.getPlayer().teleport(DeathListener.get().lobbyspawn), 5);
             Dungeon.getInstance().getCachedPlayers().remove(ev.getPlayer().getName());
             return;
         }

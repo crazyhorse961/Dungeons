@@ -24,6 +24,11 @@ public class DeathListener implements Listener {
     private boolean called;
 
     private Map<String, Integer> deaths = Dungeon.getInstance().getPlayersDeath();
+    private static DeathListener instance;
+
+    static{
+        instance = new DeathListener();
+    }
 
     @EventHandler
     public void onPlayerDeath(PlayerRespawnEvent e) {
@@ -55,10 +60,10 @@ public class DeathListener implements Listener {
         Bukkit.getScheduler().runTaskLater(Dungeon.getInstance(), () -> {
             if (deaths.containsKey(name)){
                 player.teleport(dungeonspawn);
-                Bukkit.broadcastMessage(ChatColor.translateAlternateColorCodes('&', Dungeon.getInstance().getConfig().getString("lost-one-life").replace("%player%", player.getName())));
+                Bukkit.broadcastMessage(ChatColor.translateAlternateColorCodes('&', Dungeon.getInstance().getConfig().getString("lost-one-life").replace("%player%", player.getName()).replace("%max%", String.valueOf(lives)).replace("%lifes%", String.valueOf(deaths.get(name)))));
             }}, 20);
     }
-    private void loadConfig() {
+    public void loadConfig() {
         lives = Dungeon.getInstance().getConfig().getInt("lives");
         dungeonspawn = stringToLocation(Dungeon.getInstance().getConfig().getString("dungeonspawn"));
         lobbyspawn = stringToLocation(Dungeon.getInstance().getConfig().getString("lobbyspawn"));
@@ -69,7 +74,7 @@ public class DeathListener implements Listener {
         String[] values = loc.split(";");
         return new Location(Bukkit.getWorld(values[3]), Double.parseDouble(values[0]), Double.parseDouble(values[1]), Double.parseDouble(values[2]));
     }
-    public static DeathListener get(){
-        return new DeathListener();
+    public static DeathListener get() {
+        return instance;
     }
 }

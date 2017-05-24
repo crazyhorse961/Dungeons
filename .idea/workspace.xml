@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4b4a385c-f5e5-4a25-ab9d-d37fd17cd79f" name="Default" comment="">
+    <list default="true" id="4b4a385c-f5e5-4a25-ab9d-d37fd17cd79f" name="Default" comment="Last addon">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Dungeons/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Dungeons/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/Dungeon.java" afterPath="$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/Dungeon.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/commands/DungeonCommand.java" afterPath="$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/commands/DungeonCommand.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/listeners/DeathListener.java" afterPath="$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/listeners/DeathListener.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/listeners/QuitListener.java" afterPath="$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/listeners/QuitListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Dungeons/src/main/resources/config.yml" afterPath="$PROJECT_DIR$/../Dungeons/src/main/resources/config.yml" />
     </list>
     <ignored path="$PROJECT_DIR$/../Dungeons/out/" />
     <ignored path="$PROJECT_DIR$/../Dungeons/target/" />
@@ -32,12 +34,10 @@
       <file leaf-file-name="Dungeon.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/Dungeon.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+            <state relative-caret-position="566">
+              <caret line="34" column="41" lean-forward="false" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1437#1438#0" expanded="true" />
-                <element signature="e#1473#1474#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -46,8 +46,8 @@
       <file leaf-file-name="DungeonCommand.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/commands/DungeonCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="33" column="98" lean-forward="false" selection-start-line="33" selection-start-column="98" selection-end-line="33" selection-end-column="98" />
+            <state relative-caret-position="799">
+              <caret line="56" column="159" lean-forward="false" selection-start-line="56" selection-start-column="159" selection-end-line="56" selection-end-column="159" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,8 +58,8 @@
       <file leaf-file-name="QuitListener.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/listeners/QuitListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="86" lean-forward="false" selection-start-line="28" selection-start-column="86" selection-end-line="28" selection-end-column="86" />
+            <state relative-caret-position="493">
+              <caret line="29" column="18" lean-forward="false" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -80,10 +80,12 @@
       <file leaf-file-name="DeathListener.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/listeners/DeathListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="48" column="17" lean-forward="true" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
+            <state relative-caret-position="515">
+              <caret line="62" column="272" lean-forward="false" selection-start-line="62" selection-start-column="272" selection-end-line="62" selection-end-column="272" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#3220#3221#0" expanded="true" />
+                <element signature="e#3251#3252#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -92,8 +94,8 @@
       <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../Dungeons/src/main/resources/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="14" />
+            <state relative-caret-position="136">
+              <caret line="8" column="54" lean-forward="false" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -120,12 +122,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/../Dungeons/pom.xml" />
-        <option value="$PROJECT_DIR$/../Dungeons/src/main/resources/config.yml" />
-        <option value="$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/Dungeon.java" />
         <option value="$PROJECT_DIR$/../Dungeons/src/main/resources/plugin.yml" />
         <option value="$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/listeners/QuitListener.java" />
-        <option value="$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/listeners/DeathListener.java" />
+        <option value="$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/Dungeon.java" />
         <option value="$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/commands/DungeonCommand.java" />
+        <option value="$PROJECT_DIR$/../Dungeons/src/main/resources/config.yml" />
+        <option value="$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/listeners/DeathListener.java" />
       </list>
     </option>
   </component>
@@ -743,7 +745,7 @@
       <workItem from="1495633082711" duration="653000" />
       <workItem from="1495633932837" duration="1325000" />
       <workItem from="1495635595454" duration="2463000" />
-      <workItem from="1495638894827" duration="1811000" />
+      <workItem from="1495638894827" duration="3953000" />
     </task>
     <task id="LOCAL-00001" summary="Worked on main listener and main command, maven etc.">
       <created>1494353570656</created>
@@ -801,11 +803,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495551397752</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Fixed everything, but really now.">
+      <created>1495640825736</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1495640825736</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21524000" />
+    <option name="totallyTimeSpent" value="23666000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -858,7 +867,9 @@
     <MESSAGE value="Delayed teleport" />
     <MESSAGE value="Respawn should now work." />
     <MESSAGE value="Fixed *everything*" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed *everything*" />
+    <MESSAGE value="Fixed everything, but really now." />
+    <MESSAGE value="Last addon" />
+    <option name="LAST_COMMIT_MESSAGE" value="Last addon" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -879,6 +890,8 @@
           <caret line="37" column="9" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3220#3221#0" expanded="true" />
+            <element signature="e#3251#3252#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -897,8 +910,6 @@
           <caret line="31" column="44" lean-forward="false" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1437#1438#0" expanded="true" />
-            <element signature="e#1473#1474#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -945,6 +956,8 @@
           <caret line="23" column="73" lean-forward="false" selection-start-line="23" selection-start-column="73" selection-end-line="23" selection-end-column="73" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3220#3221#0" expanded="true" />
+            <element signature="e#3251#3252#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -963,8 +976,6 @@
           <caret line="28" column="24" lean-forward="false" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1437#1438#0" expanded="true" />
-            <element signature="e#1473#1474#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1011,6 +1022,8 @@
           <caret line="23" column="54" lean-forward="false" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3220#3221#0" expanded="true" />
+            <element signature="e#3251#3252#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1029,8 +1042,6 @@
           <caret line="28" column="24" lean-forward="false" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1437#1438#0" expanded="true" />
-            <element signature="e#1473#1474#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1077,6 +1088,8 @@
           <caret line="23" column="54" lean-forward="false" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3220#3221#0" expanded="true" />
+            <element signature="e#3251#3252#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1123,6 +1136,8 @@
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="28" selection-end-column="150" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3220#3221#0" expanded="true" />
+            <element signature="e#3251#3252#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1141,8 +1156,6 @@
           <caret line="28" column="24" lean-forward="false" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1437#1438#0" expanded="true" />
-            <element signature="e#1473#1474#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1161,8 +1174,6 @@
           <caret line="30" column="79" lean-forward="false" selection-start-line="30" selection-start-column="79" selection-end-line="30" selection-end-column="79" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1437#1438#0" expanded="true" />
-            <element signature="e#1473#1474#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1201,6 +1212,8 @@
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="28" selection-end-column="150" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3220#3221#0" expanded="true" />
+            <element signature="e#3251#3252#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1245,6 +1258,8 @@
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="28" selection-end-column="150" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3220#3221#0" expanded="true" />
+            <element signature="e#3251#3252#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1263,8 +1278,6 @@
           <caret line="29" column="62" lean-forward="false" selection-start-line="29" selection-start-column="62" selection-end-line="29" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1437#1438#0" expanded="true" />
-            <element signature="e#1473#1474#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1278,18 +1291,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/Dungeon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1437#1438#0" expanded="true" />
-            <element signature="e#1473#1474#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Dungeons/src/main/resources/plugin.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1298,18 +1299,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Dungeons/src/main/resources/config.yml">
+    <entry file="file://$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/Dungeon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="14" />
-          <folding />
+        <state relative-caret-position="566">
+          <caret line="34" column="41" lean-forward="false" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/listeners/QuitListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="86" lean-forward="false" selection-start-line="28" selection-start-column="86" selection-end-line="28" selection-end-column="86" />
+        <state relative-caret-position="493">
+          <caret line="29" column="18" lean-forward="false" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1318,18 +1321,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/listeners/DeathListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="17" lean-forward="true" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
+        <state relative-caret-position="515">
+          <caret line="62" column="272" lean-forward="false" selection-start-line="62" selection-start-column="272" selection-end-line="62" selection-end-column="272" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3220#3221#0" expanded="true" />
+            <element signature="e#3251#3252#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Dungeons/src/main/resources/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="54" lean-forward="false" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/commands/DungeonCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="33" column="98" lean-forward="false" selection-start-line="33" selection-start-column="98" selection-end-line="33" selection-end-column="98" />
+        <state relative-caret-position="799">
+          <caret line="56" column="159" lean-forward="false" selection-start-line="56" selection-start-column="159" selection-end-line="56" selection-end-column="159" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
