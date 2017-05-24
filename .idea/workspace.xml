@@ -3,12 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="4b4a385c-f5e5-4a25-ab9d-d37fd17cd79f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Dungeons/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Dungeons/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/Dungeon.java" afterPath="$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/Dungeon.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/commands/DungeonCommand.java" afterPath="$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/commands/DungeonCommand.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/listeners/DeathListener.java" afterPath="$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/listeners/DeathListener.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/listeners/QuitListener.java" afterPath="$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/listeners/QuitListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Dungeons/src/main/resources/config.yml" afterPath="$PROJECT_DIR$/../Dungeons/src/main/resources/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Dungeons/src/main/resources/plugin.yml" afterPath="$PROJECT_DIR$/../Dungeons/src/main/resources/plugin.yml" />
     </list>
     <ignored path="$PROJECT_DIR$/../Dungeons/out/" />
     <ignored path="$PROJECT_DIR$/../Dungeons/target/" />
@@ -35,8 +32,8 @@
       <file leaf-file-name="Dungeon.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/Dungeon.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="583">
-              <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+            <state relative-caret-position="629">
+              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1437#1438#0" expanded="true" />
@@ -46,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DungeonCommand.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DungeonCommand.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/commands/DungeonCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="41" column="95" lean-forward="false" selection-start-line="41" selection-start-column="95" selection-end-line="41" selection-end-column="95" />
+            <state relative-caret-position="158">
+              <caret line="33" column="98" lean-forward="false" selection-start-line="33" selection-start-column="98" selection-end-line="33" selection-end-column="98" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QuitListener.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="QuitListener.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/listeners/QuitListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="86" lean-forward="false" selection-start-line="20" selection-start-column="86" selection-end-line="20" selection-end-column="86" />
+            <state relative-caret-position="476">
+              <caret line="28" column="86" lean-forward="false" selection-start-line="28" selection-start-column="86" selection-end-line="28" selection-end-column="86" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -83,8 +80,8 @@
       <file leaf-file-name="DeathListener.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/listeners/DeathListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="50" column="69" lean-forward="false" selection-start-line="50" selection-start-column="69" selection-end-line="50" selection-end-column="69" />
+            <state relative-caret-position="816">
+              <caret line="48" column="17" lean-forward="true" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -95,8 +92,8 @@
       <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../Dungeons/src/main/resources/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+            <state relative-caret-position="102">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -125,10 +122,10 @@
         <option value="$PROJECT_DIR$/../Dungeons/pom.xml" />
         <option value="$PROJECT_DIR$/../Dungeons/src/main/resources/config.yml" />
         <option value="$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/Dungeon.java" />
-        <option value="$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/listeners/DeathListener.java" />
-        <option value="$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/commands/DungeonCommand.java" />
         <option value="$PROJECT_DIR$/../Dungeons/src/main/resources/plugin.yml" />
         <option value="$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/listeners/QuitListener.java" />
+        <option value="$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/listeners/DeathListener.java" />
+        <option value="$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/commands/DungeonCommand.java" />
       </list>
     </option>
   </component>
@@ -167,8 +164,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -305,7 +303,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -740,7 +737,13 @@
       <workItem from="1495466758732" duration="2192000" />
       <workItem from="1495533795789" duration="1678000" />
       <workItem from="1495548018594" duration="25000" />
-      <workItem from="1495550889259" duration="494000" />
+      <workItem from="1495550889259" duration="579000" />
+      <workItem from="1495552428186" duration="785000" />
+      <workItem from="1495631669029" duration="13000" />
+      <workItem from="1495633082711" duration="653000" />
+      <workItem from="1495633932837" duration="1325000" />
+      <workItem from="1495635595454" duration="2463000" />
+      <workItem from="1495638894827" duration="1811000" />
     </task>
     <task id="LOCAL-00001" summary="Worked on main listener and main command, maven etc.">
       <created>1494353570656</created>
@@ -791,11 +794,18 @@
       <option name="project" value="LOCAL" />
       <updated>1495346030672</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Fixed *everything*">
+      <created>1495551397752</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1495551397752</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14389000" />
+    <option name="totallyTimeSpent" value="21524000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -809,21 +819,21 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="GitLabIntegration" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Floobits" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2867804" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24307036" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -847,7 +857,8 @@
     <MESSAGE value="Bug fixes" />
     <MESSAGE value="Delayed teleport" />
     <MESSAGE value="Respawn should now work." />
-    <option name="LAST_COMMIT_MESSAGE" value="Respawn should now work." />
+    <MESSAGE value="Fixed *everything*" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed *everything*" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1267,11 +1278,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Dungeons/src/main/resources/config.yml">
+    <entry file="file://$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/Dungeon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-          <folding />
+        <state relative-caret-position="629">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1437#1438#0" expanded="true" />
+            <element signature="e#1473#1474#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1283,22 +1298,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/Dungeon.java">
+    <entry file="file://$PROJECT_DIR$/../Dungeons/src/main/resources/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="583">
-          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1437#1438#0" expanded="true" />
-            <element signature="e#1473#1474#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/commands/DungeonCommand.java">
+    <entry file="file://$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/listeners/QuitListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="41" column="95" lean-forward="false" selection-start-line="41" selection-start-column="95" selection-end-line="41" selection-end-column="95" />
+        <state relative-caret-position="476">
+          <caret line="28" column="86" lean-forward="false" selection-start-line="28" selection-start-column="86" selection-end-line="28" selection-end-column="86" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1307,18 +1318,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/listeners/DeathListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="50" column="69" lean-forward="false" selection-start-line="50" selection-start-column="69" selection-end-line="50" selection-end-column="69" />
+        <state relative-caret-position="816">
+          <caret line="48" column="17" lean-forward="true" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/listeners/QuitListener.java">
+    <entry file="file://$PROJECT_DIR$/../Dungeons/src/main/java/com/crazyhoorse961/dungeons/commands/DungeonCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="86" lean-forward="false" selection-start-line="20" selection-start-column="86" selection-end-line="20" selection-end-column="86" />
+        <state relative-caret-position="158">
+          <caret line="33" column="98" lean-forward="false" selection-start-line="33" selection-start-column="98" selection-end-line="33" selection-end-column="98" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

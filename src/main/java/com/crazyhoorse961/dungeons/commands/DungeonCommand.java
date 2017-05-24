@@ -30,10 +30,12 @@ public class DungeonCommand implements CommandExecutor
                             commandSender.sendMessage(ChatColor.RED  +"You don't have the permission to end the dungeon!");
                             return true;
                         }
-                        for(String str : Dungeon.getInstance().getPlayersInDungeon()){
+                        if(Dungeon.getInstance().getPlayersInDungeon().isEmpty()){
+                            commandSender.sendMessage(ChatColor.RED + "Dungeon hasn't yet started!");
+                            return true;
+                        }
                             for(String commands : Dungeon.getInstance().getConfig().getStringList("commands.end")){
-                                Bukkit.dispatchCommand(Bukkit.getConsoleSender(), commands.replace("%player%", str));
-                            }
+                                Bukkit.dispatchCommand(Bukkit.getConsoleSender(), commands);
                         }
                         Bukkit.getOnlinePlayers().forEach(pls -> {
                             if(Dungeon.getInstance().getPlayersInDungeon().contains(pls.getName())){
@@ -51,16 +53,18 @@ public class DungeonCommand implements CommandExecutor
                             commandSender.sendMessage(ChatColor.RED  + "You don't have the permission to start the dungeon!");
                             return true;
                         }
+                        if(!Dungeon.getInstance().getPlayersInDungeon().isEmpty()){
+                            commandSender.sendMessage(ChatColor.RED + "Dungeon altready started!");
+                            return true;
+                        }
                         Bukkit.getOnlinePlayers().forEach(pls -> Dungeon.getInstance().getPlayersInDungeon().add(pls.getName()));
                         Bukkit.getOnlinePlayers().forEach(pls -> Dungeon.getInstance().getCachedPlayers().add(pls.getName()));
                         Bukkit.getOnlinePlayers().forEach(pls -> Dungeon.getInstance().getPlayersDeath().put(pls.getName(), 0 ));
                         String[] valuesD = Dungeon.getInstance().getConfig().getString("dungeonspawn").split(";");
                         Location toTpD = new Location(Bukkit.getWorld(valuesD[3]), Double.valueOf(valuesD[0]), Double.valueOf(valuesD[1]), Double.valueOf(valuesD[2]));
                         Bukkit.getOnlinePlayers().forEach(pls -> pls.teleport(toTpD));
-                        for(String str : Dungeon.getInstance().getPlayersInDungeon()){
                             for(String commands : Dungeon.getInstance().getConfig().getStringList("commands.start")){
-                                Bukkit.dispatchCommand(Bukkit.getConsoleSender(), commands.replace("%player%", str));
-                            }
+                                Bukkit.dispatchCommand(Bukkit.getConsoleSender(), commands);
                         }
                         return true;
                     case "leave":
@@ -74,6 +78,12 @@ public class DungeonCommand implements CommandExecutor
                         ((Player) commandSender).teleport(new Location(Bukkit.getWorld(lobby[3]), Double.valueOf(lobby[0]), Double.valueOf(lobby[1]), Double.valueOf(lobby[2])));
                         commandSender.sendMessage(ChatColor.GREEN + "You leaved the dungeon!");
                         return true;
+                    case "reload":
+                        if(!commandSender.hasPermission("dg.admin.reload")){
+                            commandSender.sendMessage(ChatColor.RED + "You don't have the permission to reload the config");
+                            return true;
+                        }
+                        Dungeon.getInstance().reloadConfig();
                 }
         }
         return true;

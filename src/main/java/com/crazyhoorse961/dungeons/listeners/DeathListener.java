@@ -9,7 +9,6 @@ import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.entity.PlayerDeathEvent;
 import org.bukkit.event.player.PlayerRespawnEvent;
 
 import java.util.Map;
@@ -17,12 +16,11 @@ import java.util.Map;
 /**
  * @author crazyhoorse961
  */
-public class DeathListener implements Listener
-{
+public class DeathListener implements Listener {
 
     private int lives;
     private Location dungeonspawn;
-    private Location lobbyspawn;
+    public Location lobbyspawn;
     private boolean called;
 
     private Map<String, Integer> deaths = Dungeon.getInstance().getPlayersDeath();
@@ -41,33 +39,37 @@ public class DeathListener implements Listener
             if (deaths.get(name) == lives) {
                 deaths.remove(name);
                 e.setRespawnLocation(lobbyspawn);
-                Dungeon.getInstance().getPlayersInDungeon().forEach(pls -> Bukkit.getPlayer(pls).sendMessage(ChatColor.translateAlternateColorCodes('&', Dungeon.getInstance().getConfig().getString("no-lives-death").replace("%player%", player.getName()))));
-                if (Dungeon.getInstance().getPlayersInDungeon().contains("done")) {
-                    for (String str : Dungeon.getInstance().getCachedPlayers()) {
-                        for (String commands : Dungeon.getInstance().getConfig().getStringList("commands.end")) {
-                            Bukkit.dispatchCommand(Bukkit.getConsoleSender(), commands.replace("%player%", str));
-                        }
+                Dungeon.getInstance().getPlayersInDungeon().remove(name);
+                Bukkit.broadcastMessage(ChatColor.translateAlternateColorCodes('&', Dungeon.getInstance().getConfig().getString("no-lives-death").replace("%player%", name)));
+                if (deaths.isEmpty()) {
+                    for (String commands : Dungeon.getInstance().getConfig().getStringList("commands.end")) {
+                        Bukkit.dispatchCommand(Bukkit.getConsoleSender(), commands);
                     }
                     Dungeon.getInstance().getCachedPlayers().clear();
-                    return;
                 }
+                Bukkit.getScheduler().runTaskLater(Dungeon.getInstance(), () -> player.teleport(lobbyspawn), 20);
+                return;
             }
-            deaths.putIfAbsent(name, 0);
-            deaths.put(name, deaths.get(name) + 1);
-            Bukkit.getScheduler().runTaskLater(Dungeon.getInstance(), () -> player.teleport(dungeonspawn), 2);
-            Dungeon.getInstance().getPlayersInDungeon().forEach(pls -> Bukkit.getPlayer(pls).sendMessage(ChatColor.translateAlternateColorCodes('&', Dungeon.getInstance().getConfig().getString("lost-one-life").replace("%player%", player.getName()))));
         }
+        deaths.put(name, deaths.containsKey(name) ? deaths.get(name) + 1 : 1);
+        Bukkit.getScheduler().runTaskLater(Dungeon.getInstance(), () -> {
+            if (deaths.containsKey(name)){
+                player.teleport(dungeonspawn);
+                Bukkit.broadcastMessage(ChatColor.translateAlternateColorCodes('&', Dungeon.getInstance().getConfig().getString("lost-one-life").replace("%player%", player.getName())));
+            }}, 20);
     }
-
-    private void loadConfig(){
+    private void loadConfig() {
         lives = Dungeon.getInstance().getConfig().getInt("lives");
         dungeonspawn = stringToLocation(Dungeon.getInstance().getConfig().getString("dungeonspawn"));
         lobbyspawn = stringToLocation(Dungeon.getInstance().getConfig().getString("lobbyspawn"));
         called = true;
     }
 
-    private Location stringToLocation(String loc){
+    private Location stringToLocation(String loc) {
         String[] values = loc.split(";");
         return new Location(Bukkit.getWorld(values[3]), Double.parseDouble(values[0]), Double.parseDouble(values[1]), Double.parseDouble(values[2]));
+    }
+    public static DeathListener get(){
+        return new DeathListener();
     }
 }
