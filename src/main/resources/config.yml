@@ -12,6 +12,8 @@ already-started: 'Game altready started'
 
 not-started: 'You didn''t start the game'
 
+leave: '%player% leaved the Dungeon'
+
 commands:
   start:
     - 'broadcast '

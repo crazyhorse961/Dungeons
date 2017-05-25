@@ -77,6 +77,7 @@ public class DungeonCommand implements CommandExecutor
                         String[] lobby = Dungeon.getInstance().getConfig().getString("lobbyspawn").split(";");
                         ((Player) commandSender).teleport(new Location(Bukkit.getWorld(lobby[3]), Double.valueOf(lobby[0]), Double.valueOf(lobby[1]), Double.valueOf(lobby[2])));
                         commandSender.sendMessage(ChatColor.GREEN + "You leaved the dungeon!");
+                        Bukkit.getOnlinePlayers().forEach(pls -> pls.sendMessage(ChatColor.translateAlternateColorCodes('&', Dungeon.getInstance().getConfig().getString("leave").replace("%player%", commandSender.getName()))));
                         return true;
                     case "reload":
                         if(!commandSender.hasPermission("dg.admin.reload")){
@@ -84,6 +85,8 @@ public class DungeonCommand implements CommandExecutor
                             return true;
                         }
                         Dungeon.getInstance().reloadConfig();
+                        commandSender.sendMessage(ChatColor.GREEN + "Plugin Reloaded");
+                        return true;
                 }
         }
         return true;
