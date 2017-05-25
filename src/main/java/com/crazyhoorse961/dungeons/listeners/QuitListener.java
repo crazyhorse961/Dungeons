@@ -9,6 +9,8 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 
+import java.util.stream.Collectors;
+
 /**
  * @author crazyhoorse961
  */
@@ -20,7 +22,7 @@ public class QuitListener implements Listener
         if(Dungeon.getInstance().getPlayersInDungeon().contains(ev.getPlayer().getName())){
             Dungeon.getInstance().getPlayersInDungeon().remove(ev.getPlayer().getName());
             Dungeon.getInstance().getPlayersDeath().remove(ev.getPlayer().getName());
-            if(Dungeon.getInstance().getPlayersInDungeon().isEmpty()){
+            if(Dungeon.getInstance().getPlayersDeath().isEmpty()){
                 for(String commands : Dungeon.getInstance().getConfig().getStringList("commands.end")){
                     Bukkit.dispatchCommand(Bukkit.getConsoleSender(), commands);
                 }

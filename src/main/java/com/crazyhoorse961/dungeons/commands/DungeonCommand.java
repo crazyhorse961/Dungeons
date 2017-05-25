@@ -78,6 +78,11 @@ public class DungeonCommand implements CommandExecutor
                         ((Player) commandSender).teleport(new Location(Bukkit.getWorld(lobby[3]), Double.valueOf(lobby[0]), Double.valueOf(lobby[1]), Double.valueOf(lobby[2])));
                         commandSender.sendMessage(ChatColor.GREEN + "You leaved the dungeon!");
                         Bukkit.getOnlinePlayers().forEach(pls -> pls.sendMessage(ChatColor.translateAlternateColorCodes('&', Dungeon.getInstance().getConfig().getString("leave").replace("%player%", commandSender.getName()))));
+                        if(Dungeon.getInstance().getPlayersInDungeon().isEmpty()){
+                            for(String commands : Dungeon.getInstance().getConfig().getStringList("commands.end")){
+                                Bukkit.dispatchCommand(Bukkit.getConsoleSender(), commands);
+                            }
+                        }
                         return true;
                     case "reload":
                         if(!commandSender.hasPermission("dg.admin.reload")){
