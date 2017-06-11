@@ -3,6 +3,7 @@ package com.crazyhoorse961.dungeons.commands;/**
  */
 
 import com.crazyhoorse961.dungeons.Dungeon;
+import com.google.common.collect.Lists;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
@@ -10,6 +11,8 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+
+import java.util.List;
 
 /**
  * @author crazyhoorse961
@@ -76,7 +79,6 @@ public class DungeonCommand implements CommandExecutor
                         Dungeon.getInstance().getPlayersDeath().remove(commandSender.getName());
                         String[] lobby = Dungeon.getInstance().getConfig().getString("lobbyspawn").split(";");
                         ((Player) commandSender).teleport(new Location(Bukkit.getWorld(lobby[3]), Double.valueOf(lobby[0]), Double.valueOf(lobby[1]), Double.valueOf(lobby[2])));
-                        commandSender.sendMessage(ChatColor.GREEN + "You leaved the dungeon!");
                         Bukkit.getOnlinePlayers().forEach(pls -> pls.sendMessage(ChatColor.translateAlternateColorCodes('&', Dungeon.getInstance().getConfig().getString("leave").replace("%player%", commandSender.getName()))));
                         if(Dungeon.getInstance().getPlayersInDungeon().isEmpty()){
                             for(String commands : Dungeon.getInstance().getConfig().getStringList("commands.end")){
@@ -93,7 +95,28 @@ public class DungeonCommand implements CommandExecutor
                         commandSender.sendMessage(ChatColor.GREEN + "Plugin Reloaded");
                         return true;
                 }
+            default:
+                if(strings.length >= 2){
+                    if(strings[0].equals("add")){
+                        StringBuilder sb = new StringBuilder();
+                        for (int i = 1; i < strings.length; i++)
+                            sb.append(strings[i]+" ");
+                        List<String> commands = Lists.newArrayList();
+                        for(String cmds : Dungeon.getInstance().getConfig().getStringList("commands.start")){
+                            commands.add(cmds);
+                        }
+                        Location loc = ((Player) commandSender).getLocation();
+                        commands.add(sb.toString().replace("%x%",
+                                String.valueOf(loc.getX())).replace("%y%", String.valueOf(loc.getY())).replace(
+                                        "%z%", String.valueOf(loc.getZ())));
+                        Dungeon.getInstance().getConfig().set("commands.start", commands);
+                        Dungeon.getInstance().saveConfig();
+                        commandSender.sendMessage(ChatColor.GREEN + "Command added!");
+                        return true;
+                    }
+                    return true;
+            }
+            return true;
         }
-        return true;
     }
 }
